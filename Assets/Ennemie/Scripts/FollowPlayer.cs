@@ -2,15 +2,10 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    public float timeToStart = 3;
-    private float timer = 0;
 
-    void Update()
+    private void FixedUpdate()
     {
-        if (timer < timeToStart)
-            timer += Time.deltaTime;
-        else if (timer >= timeToStart)
-            ReachWayPoint();
+        ReachWayPoint();
     }
 
     void ReachWayPoint()

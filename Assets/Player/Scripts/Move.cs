@@ -24,15 +24,9 @@ public class Move : MonoBehaviour
 
     void MoveLateral()
     {
-        if (Input.GetAxisRaw("Horizontal") > 0)
-            rb.AddForce(new Vector2(Input.GetAxisRaw("Horizontal") * forceMove, 0));
-        if (Input.GetAxisRaw("Horizontal") < 0)
-            rb.AddForce(new Vector2(Input.GetAxisRaw("Horizontal") * forceMove, 0));
-
-        if (rb.velocity.x > 10)
-            rb.velocity = new Vector2(10, rb.velocity.y);
-        else if (rb.velocity.x < -10)
-            rb.velocity = new Vector2(-10, rb.velocity.y);
+        Vector2 v = rb.velocity;
+        v.x = Input.GetAxis("Horizontal") * forceMove;
+        rb.velocity = v;
     }
 
     private void OnTriggerStay2D(Collider2D other)

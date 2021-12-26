@@ -37,19 +37,19 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Player\Scripts\Wraparound.cs" />
+     <Compile Include="Assets\WayPoint\CreateWayPoint.cs" />
      <Compile Include="Assets\Main Menu\Scripts\ButtonFunctions.cs" />
-     <Compile Include="Assets\Scripts\CreatePlateform.cs" />
-     <Compile Include="Assets\Camera\FollowPlayerY.cs" />
-     <Compile Include="Assets\Scripts\DestroyPlateform.cs" />
-     <Compile Include="Assets\Player\Scripts\Move.cs" />
-     <Compile Include="Assets\Game Over\functionButton.cs" />
-     <Compile Include="Assets\Game Over\fondu.cs" />
-     <Compile Include="Assets\Scripts\CreateWayPoint.cs" />
-     <Compile Include="Assets\Ennemie\Scripts\FollowPlayer.cs" />
+     <Compile Include="Assets\Plateforms\CreatePlateform.cs" />
      <Compile Include="Assets\Ennemie\Scripts\KillPlayer.cs" />
-     <Compile Include="Assets\Score\ScoreManager.cs" />
-     <Compile Include="Assets\Score\ScorePlayer.cs" />
      <Compile Include="Assets\Game Over\RedimensionImage.cs" />
+     <Compile Include="Assets\Score\ScoreManager.cs" />
+     <Compile Include="Assets\Camera\FollowPlayerY.cs" />
+     <Compile Include="Assets\Plateforms\DestroyPlateform.cs" />
+     <Compile Include="Assets\Player\Scripts\Move.cs" />
+     <Compile Include="Assets\Game Over\fondu.cs" />
+     <Compile Include="Assets\Game Over\functionButton.cs" />
+     <Compile Include="Assets\Ennemie\Scripts\FollowPlayer.cs" />
+     <Compile Include="Assets\Game Manager\InstantiateAlterEgo.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.19f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
